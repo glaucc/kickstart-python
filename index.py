@@ -17,6 +17,8 @@ while t>0:
         elif c == "A":
             total -= d
     unit += total//l
+    if unit < 0:
+        unit = 0
     tc += 1
     print('Case #'+str(tc)+': '+str(unit))
     total = 0
